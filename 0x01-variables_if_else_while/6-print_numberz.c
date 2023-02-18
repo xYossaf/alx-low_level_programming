@@ -1,5 +1,4 @@
 #include <stdio.h>
-
 /**
  * main - Entry point
  *
@@ -10,7 +9,7 @@ int main(void)
 	int d = 48;
 
 	for (; d <= 57; d++)
-		putchar(d);
-	putchar('\n');
+		putchar (d);
+	putchar ('\n');
 	return (0);
 }
