@@ -18,11 +18,11 @@ main(void)
 	n %= 10;
 	printf("%d and ", n);
 	if (n > 5)
-		printf("is greater than 5/n");
+		printf("is greater than 5");
 	else if (n == 0)
 		printf("is 0/n");
 	else if (n < 6 && n != 0)
-		printf("is less than 6 and not 0/n");
+		printf("is less than 6 and not 0");
 	return (0);
 
 }
