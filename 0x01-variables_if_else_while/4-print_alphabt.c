@@ -3,18 +3,21 @@
 /**
  * main - Entry point
  *
- * Return: Always 0 (Success)
+ * Description: prints the English alphabet, excluding q and e inlower case
+ *
+ * Return: 0 (success)
  */
 int main(void)
 {
-	char a = 'a';
+	char chars;
 
-	for (; a <= 'z'; a++)
+	for (chars = 'a'; chars <= 'z'; chars++)
 	{
-		if (a == 'e' || a == 'q')
+		if (chars == 'e' || chars == 'q')
 			continue;
-		putchar(a);
+		putchar(chars);
 	}
 	putchar('\n');
+
 	return (0);
 }
