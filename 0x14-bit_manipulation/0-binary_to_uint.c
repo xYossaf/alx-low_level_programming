@@ -1,7 +1,5 @@
 #include "main.h"
-#include <math.h>
-#include <stdio.h>
-#include <string.h>
+
 /**
 * binary_to_uint - Binary to unit converstion
 * @b: the binary string
