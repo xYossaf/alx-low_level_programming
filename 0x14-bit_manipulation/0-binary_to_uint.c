@@ -8,30 +8,19 @@
 */
 unsigned int binary_to_uint(const char *b)
 {
-int res = 0;
-int non1and0 = 0;
-int i;
+	unsigned int res = 0;
 
-for (i = strlen(b) - 1; i >= 0; i--)
-{
-if (b[i] != '0' && b[i] != '1')
-{
-non1and0 = 1;
-break;
-}
-if (b[i] == '1')
-{
-res += pow(2, strlen(b) - i - 1);
-}
+	if (!b)
+		return (0);
+
+	while (*b)
+	{
+		if (*b < '0' || *b > '1')
+			return (0);
+		res <<= 1;
+		res += *b++ - '0';
+	}
+
+	return (res);
 }
 
-
-if (non1and0 == 0)
-{
-return (res);
-}
-else
-{
-return (0);
-}
-}
